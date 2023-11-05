@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Contact us</title>
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="https://kit.fontawesome.com/123926b258.js" crossorigin="anonymous"></script>
+ 
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+<body style="background-color: #E5BEEC;">
+  <section id="title">
+    <div class="container-fluid" style="padding-bottom: 0;">
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="images/icon.png"> PetShop</a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Return to Homepage</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+  <div class="container text-center">
+    <h1 class="page-title mt-4" style="color: #7d4586;">Pet Contests</h1>
+  </div>
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Photo</th>
+            <th scope="col">Pet Name</th>
+            <th scope="col">Likes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="images/petc1.jpeg" alt="Pet Photo" class="img-fluid">
+            </td>
+            <td>Buddy</td>
+            <td>
+              <button
+                class="btn btn-primary"
+                onclick="addLike('like1')"
+              >
+                Like
+              </button>
+              <span id="like1">0</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="images/petc2.jpg" alt="Pet Photo" class="img-fluid">
+            </td>
+            <td>Whiskers</td>
+            <td>
+              <button
+                class="btn btn-primary"
+                onclick="addLike('like2')"
+              >
+                Like
+              </button>
+              <span id="like2">0</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <footer id="footer">
+    <a href="#"><i class="footer-icons fab fa-facebook fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a>
+    <a href="#"><i class="footer-icons fab fa-instagram fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a>
+    <a href="#"><i class="footer-icons fab fa-twitter fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a>
+    <a href="#"><i class="footer-icons fab fa-youtube fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a>
+    <a href="#"><i class="footer-icons fas fa-envelope fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a><br>
+  </footer>
+</body>
+</html>

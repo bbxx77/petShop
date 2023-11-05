@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Admin Panel</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Admin Panel</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>№</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Registration Time</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="user-list"></tbody>
+  </table>
+
+  <form id="edit-form" style="display: none;">
+    <h2>Edit User</h2>
+    <div class="form-group">
+      <label for="edit-username">Username:</label>
+      <input type="text" class="form-control" id="edit-username" name="edit-username">
+    </div>
+    <div class="form-group">
+      <label for="edit-email">Email:</label>
+      <input type="email" class="form-control" id="edit-email" name="edit-email">
+    </div>
+    <button type="button" id="edit-submit" class="btn btn-primary">Save Changes</button>
+    <button type="button" id="edit-cancel" class="btn btn-secondary">Cancel</button>
+  </form>
+
+  <script src="admin.js"></script>
+</body>
+</html>

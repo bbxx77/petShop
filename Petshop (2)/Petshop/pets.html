@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pets</title>
+  <link rel="icon" href="images/icon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="https://kit.fontawesome.com/123926b258.js" crossorigin="anonymous"></script>
+ 
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <script>
+    function displayOffer() {
+      const offerMessage = "Limited Time Offer: Get 20% Off All Pet Supplies Today! 🐾";
+      alert(offerMessage);
+      }
+    window.addEventListener("load", displayOffer);
+  </script>
+
+  <style>
+    .center-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      margin-top: 55px;
+    }
+    .slider-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+      align-items: center;
+    }
+
+    .sld-pic {
+      width: 300px;
+      height: 200px;
+      margin-right: 10px;
+    }
+
+    #prevBtn img, #nextBtn img {
+      width: 60px;
+    }
+
+</style>
+  
+</head>
+
+<body>
+    <section id="title" style="background-color: #E5BEEC;">
+        <div class="container-fluid "style="padding-bottom: 0;">
+            <nav class="navbar navbar-expand-md navbar-dark">
+              <a class="navbar-brand" href="index.html"><img src="images/icon.png" alt="">PetShop</a>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#need">ASAP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#features">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#offers">Offers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contests.html">Contests</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="basket.html">Basket</a>
+                  </li>
+                  </ul>
+                </div>
+            </nav>
+            <div class="row head-row">
+              <div class="col-lg-6 mt-4">
+                <h1 class="text-white">They are waiting for you!!!</h1>
+                <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+                <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+              </div>
+              <div class="col-lg-6">
+                <img class="title-image" src="images/main1.png" alt="Cat-img">
+              </div>
+            </div>
+        </div>
+    </section>
+    <div class="container text-center">
+      <h1 class="page-title mt-4" style="color: #7d4586;">Pet Shop Inventory</h1>
+    </div>
+    <div class="container">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Breed</th>
+            <th scope="col">Age</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Buddy</td>
+            <td>Labrador Retriever</td>
+            <td>3 years</td>
+            <td>&#8364;300</td>
+            <td>
+              <img src="images/goldenretriever.jpg" alt="Labrador Retriever" class="img-fluid" style="max-width: 400px; height: auto; border-radius: 5%;">
+            </td>
+            <td>
+              <button class="btn btn-primary addToBasket">Add to Basket</button> 
+            </td>
+          </tr>
+          <tr>
+            <td>Hammy</td>
+            <td>Dwarf Hamster</td>
+            <td>6 months</td>
+            <td>&#8364;120</td>
+            <td>
+              <img src="images/dwarfHamster.jpg" alt="Hamster" class="img-fluid" style="max-width: 400px; height: auto; border-radius: 5%;">
+            </td>
+            <td>
+              <button class="btn btn-primary addToBasket">Add to Basket</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Mittens</td>
+            <td>Maine Coon</td>
+            <td>4 years</td>
+            <td>&#8364;400</td>
+            <td>
+              <img src="images/mainecoon.jpg" alt="Maine Coon" class="img-fluid" style="max-width: 400px; height: auto; border-radius: 5%;">
+            </td>
+            <td>
+              <button class="btn btn-primary addToBasket">Add to Basket</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Nemo</td>
+            <td>Clownfish</td>
+            <td>1 year</td>
+            <td>&#8364;50</td>
+            <td>
+              <img src="images/clownFish.jpg" alt="Clownfish" class="img-fluid" style="max-width: 400px; height: auto; border-radius: 5%;">
+            </td>
+            <td>
+              <button class="btn btn-primary addToBasket">Add to Basket</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Whiskers</td>
+            <td>Bengal Cat</td>
+            <td>3 years</td>
+            <td>&#8364;250</td>
+            <td>
+              <img src="images/bengal cat.jpg" alt="Bengal Cat" class="img-fluid" style="max-width: 400px; height: auto; border-radius: 5%;">
+            </td>
+            <td>
+              <button class="btn btn-primary addToBasket">Add to Basket</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  
+
+
+<div class="mt-5px" style="text-align: center; color: white; background-color: #E5BEEC; padding: 3% 15% 2%; width: 100%;">
+  <h3>Purchase those as well!</h3>
+</div>
+
+<div class="center-container">
+  <div class="slider-container">
+    <button id="prevBtn">
+      <img style="transform: rotate(180deg)" src="images/right-arrow.png" alt="Previous">
+    </button>
+      <div class="slider">
+        <img class="sld-pic" src="images/pet-food.jpg">
+        <img class="sld-pic" src="images/pet-home.jpg">
+        <img class="sld-pic" src="images/pet-toys.jpg">
+      </div>
+      <button id="nextBtn">
+        <img src="images/right-arrow.png" alt="Next">
+    </button>
+  </div>
+</div>
+<div style="text-align: center; margin-top: 15px;  margin-bottom: 45px;"><button type="button" class="btn re-btn smdownload-button"><i class="fab fa-information"></i> View More</button></div>
+<hr style="border: none; background-color: #E5BEEC; height: 2px;">
+<footer id="footer">
+  <a href="#"><i class="footer-icons fab fa-facebook fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a>
+  <a href="#"><i class="footer-icons fab fa-instagram fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a>
+  <a href="#"><i class="footer-icons fab fa-twitter fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a>
+  <a href="#"><i class="footer-icons fab fa-youtube fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a>
+  <a href="#"><i class="footer-icons fas fa-envelope fa-2x" style="color: #E5BEEC; margin: 2% 1%;"></i></a><br>
+
+
+  <script>
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const slider = document.querySelector(".slider");
+    const images = document.querySelectorAll(".slider img");
+  
+    let currentIndex = 0;
+  
+    prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateSlider();
+    });
+  
+    nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateSlider();
+    });
+  
+    function updateSlider() {
+        images.forEach((img, index) => {
+            if (index === currentIndex) {
+                img.style.display = "block";
+            } else {
+                img.style.display = "none";
+            }
+        });
+    }
+    updateSlider();
+// Получите все кнопки "Add to Basket" на странице
+const addToBasketButtons = document.querySelectorAll('.addToBasket');
+
+// Добавьте слушатель события на каждую кнопку
+addToBasketButtons.forEach(button => {
+  button.addEventListener('click', addToBasket);
+});
+
+function addToBasket(event) {
+  const button = event.target;
+  const name = button.parentElement.parentElement.querySelector('td:first-child').textContent;
+  const price = button.parentElement.parentElement.querySelector('td:nth-child(4)').textContent;
+  const image = button.parentElement.parentElement.querySelector('img').getAttribute('src');
+
+  // Получите текущую корзину из локального хранилища (если она там есть)
+  let basket = JSON.parse(localStorage.getItem('basket')) || [];
+
+  // Добавьте выбранный товар в корзину
+  basket.push({ name, price, image });
+
+  // Сохраните обновленную корзину в локальном хранилище
+  localStorage.setItem('basket', JSON.stringify(basket));
+
+  // Оповестите пользователя о добавлении товара в корзину (необязательно)
+  alert(`"${name}" добавлен в корзину`);
+}
+
+  </script>
+  
+</footer>
+</body>
+</html>
+
